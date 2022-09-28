@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Association de judo</title>
-  <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="../libraries/bootstrap-5.2.1-dist/css/bootstrap.min.css">
-  <!-- Our CSS -->
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  <div class="container">
-    <h1> Association de judo</h1>
-    <div class="alert alert-success" role="alert">
-      Si vous voyez ce message en vert foncé dans un encart vert alors bravo, vous avez réussi à installer Bootstrap !
-    </div>
-  </div>
 
-  <!-- Bootstrap JavaScript -->
-   <script src="../libraries/bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
-  <!-- Our JavaScript -->
-  <script src="main.js"></script>
-</body>
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Justine Gachet">
+        <meta name="description"
+            content="Site officiel de l'Association de Judo de Montévrain. Pratique du judo en loisir et compétition. ">
+    
+        <title>Association de judo de Montévrain</title>
+    
+        <link rel="stylesheet" href="../libraries/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+    
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1> Association de judo de Montévrain </h1>
+                <nav role="navigation">
+                    <ul>
+                        <li><button onclick="switchIframeSrc('page2.html')"> Evenement </button></li>
+                        <li><button onclick="switchIframeSrc('page3.html')"> Association </button></li>
+                    </ul>
+                </nav>
+            </div>
+       
+            <div class="content">
+                <iframe
+                    id="iframe"
+                    src="page2.html"
+                    width="100%"
+                    height=auto>
+                </iframe>
+            </div>
+
+
+            <div class="footer">
+                <div class="social_media">Réseaux sociaux</div>
+                <div class="legal_notice">Mentions légales</div>
+            </div>
+        </div>
+
+
+        <!-- Bootstrap JavaScript -->
+        <script src="../libraries/bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
+        <!-- Our JavaScript -->
+        <script src="main.js"></script>
+
+    </body>
+
 </html>
