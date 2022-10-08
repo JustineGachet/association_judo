@@ -11,6 +11,14 @@
 <link href="../libraries/bootstrap-5.2.1-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+
+      .logo-toggler {
+        display: flex;
+        width: 100%;
+        margin-left: 17px;
+        margin-right: 20px;
+      }
+
       .navbar {
         align-items: start;
       }
@@ -28,10 +36,10 @@
         margin-left: 15px;
         border-radius: 3px 0 3px 0;
       }
-
+/* 
       .container-fluid {
         width: calc(100% - 60px);
-      }
+      } */
 
       .toggler {
         width: 100%;
@@ -55,6 +63,9 @@
         .toggler {
           display: none;
         }
+        .logo-toggler {
+          width: auto;
+        }
       }
     </style>
 
@@ -70,16 +81,20 @@
 
 
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="logo" href="./index.html" >
-      <img src="../assets/logo_desktop.jpg" height="40px" id="logo_desktop" class="align-self-start">
-      <img src="../assets/logo_mobile.png" height="40px" id="logo_mobile" class="align-self-start">
-    </a> 
-    <div class="container-fluid">
+    <div class="logo-toggler">
+      <a class="logo" href="./index.html" >
+        <img src="../assets/logo_desktop.jpg" height="40px" id="logo_desktop" class="align-self-start">
+        <img src="../assets/logo_mobile.png" height="40px" id="logo_mobile" class="align-self-start">
+      </a> 
       <div class="toggler">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>        
       </div>
+    </div>
+
+    <div class="container-fluid">
+
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item active">
@@ -122,11 +137,7 @@
 </footer>
 
     <!-- Javascript -->
-
     <script src="../libraries/bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
-
-    <script src="main.js"></script>
-
-      
+    <script src="main.js"></script>     
   </body>
 </html>
