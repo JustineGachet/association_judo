@@ -3,7 +3,7 @@
 }
 
 /*
- * Custom translucent site header
+ Translucent site header
  */
 
 .site-header {
@@ -21,7 +21,7 @@
 }
 
 /*
- * Dummy devices (replace them with your own or something else entirely!)
+ Devices
  */
 
 .product-device {
@@ -56,7 +56,7 @@
 
 
 /*
- * Extra utilities
+Extras
  */
 
 .flex-equal > * {
